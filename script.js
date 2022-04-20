@@ -96,6 +96,11 @@ const playRound = function (playerSelection, computerSelection) {
     console.log(`Computer Wins!`);
     init();
   }
+  // if (userScore === 5) {
+  //   document.querySelector(".scores").textContent = scoresPlayers[0]++;
+  // } else {
+  //   document.querySelector(".scores").textContent = scoresPlayers[1]++;
+  // }
 };
 
 const updateScore = function () {
