@@ -14,6 +14,7 @@ const scoresPlayers = document.querySelector(".scores");
 
 let userScore, comupterScore, scores, playing, playerSelection;
 let roundWinner = "";
+
 // define playing
 
 // Starting Conditions //
@@ -56,11 +57,6 @@ function handleClick(playerSelection) {
 
 // Play Round //
 const playRound = function (playerSelection, computerSelection) {
-  // const computerSelection = computerPlay();
-  // let playerSelection = prompt(
-  //   "Please choose one: rock, paper or scissors"
-  // ).toLocaleLowerCase();
-
   if (playing) {
     if (playerSelection === computerSelection) {
     } else if (playerSelection === "rock") {
@@ -91,16 +87,13 @@ const playRound = function (playerSelection, computerSelection) {
   }
   if (userScore >= 5) {
     console.log(`Player Wins!`);
+
     init();
   } else if (comupterScore >= 5) {
     console.log(`Computer Wins!`);
+
     init();
   }
-  // if (userScore === 5) {
-  //   document.querySelector(".scores").textContent = scoresPlayers[0]++;
-  // } else {
-  //   document.querySelector(".scores").textContent = scoresPlayers[1]++;
-  // }
 };
 
 const updateScore = function () {
@@ -111,41 +104,20 @@ const updateScore = function () {
   } else if (roundWinner === "computer") {
     // TEXT: 'You Lost!'
   }
-
   player0El.textContent = `Player: ${userScore}`;
   computer1El.textContent = `Computer: ${comupterScore}`;
+
+  // use a MAP to change the score in array //
+
+  // if (userScore === 5) {
+  //   scoresPlayers.textContent = ;
+  // }
 };
 
 // Restart Game //
+
 btnNew.addEventListener("click", function () {
-  init();
+  // init();
 });
 
-// End Game //
-// const gameOver = function () {
-//   if (userScore === 5 || comupterScore === 5) {
-//     // code here
-//   }
-// };
-
-// for (let i = 0; i < 5; i++) {
-//   const computerSelection = computerPlay();
-//   let playerSelection = prompt(
-//     "Please choose one: rock, paper or scissors"
-//   ).toLocaleLowerCase();
-//   playRound(playerSelection, computerSelection);
-//   console.log(`Player 1's score = ${userScore}`);
-//   console.log(`Computer's score = ${comupterScore}`);
-//   if (userScore > comupterScore) {
-//     console.log(`Player 1 WINS!`);
-//   } else if (comupterScore > userScore) {
-//     console.log(`Computer WINS!`);
-//   } else {
-//     console.log(`TIE!`);
-//   }
-// }
-
-/////////////////////////////TESTING///////////////////////////////////////
-
-// Git commits:
-// git push origin rps-ui instead of git push origin main.
+///////////////////////////TESTING/////////////////////
