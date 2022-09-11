@@ -67,6 +67,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: "Roboto", sans-serif;
 }
 
 .winner {
@@ -123,6 +124,7 @@ body {
 .playerChoicePic {
   display: flex;
   justify-content: center;
+  font-family: "Roboto", sans-serif;
 }
 
 .computerChoicePic {
@@ -162,10 +164,12 @@ body {
   margin-left: 75px;
   font-size: 25px;
   font-weight: bold;
+  font-family: "Roboto", sans-serif;
 }
 .player {
   font-weight: bold;
   font-size: 25px;
+  font-family: "Roboto", sans-serif;
 }
 
 .gameButtons {
